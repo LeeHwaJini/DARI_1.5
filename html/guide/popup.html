@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DARI &copy;LNIK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../../@resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../../@resource/js/jquery-ui.js"></script>
+    <script src="../../@resource/js/dari.js"></script>
+    <script src="../../@resource/js/common.js"></script>
+    <link rel="stylesheet" href="../../@resource/css/jquery-ui.css">
+    <link rel="stylesheet" href="../../@resource/css/common.css">
+    <link rel="stylesheet" href="../../@resource/css/utm.css">
+    <link rel="stylesheet" href="../../@resource/css/guide.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="skip-navi">
+        <a href="#content">본문 바로가기</a>
+    </div>
+    <!-- Loading -->
+    <div class="loader">
+        <div class="ico load"></div>
+        <h3>잠시만 기다려 주세요.</h3>
+    </div>
+    <!--//Loading -->
+    <!-- WRAP -->
+    <header>
+        <div class="header-wrap">
+            <a class="brand-logo" href="#">DARI</a>
+
+            <div class="brand_url_wrap">
+                <div class="txt">브랜드 > <span>www.dari.com</span></div><span class="btn type04 copy">스크립트 설치</span>
+            </div>
+
+            <div class="select-wrap">
+                <a class="select drop_down">홍길동님</a>
+                <div class="drop_menu">
+                    <a class="drop_item">마이페이지</a>
+                    <a class="drop_item">로그아웃</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrap">
+        <!-- 기본정보 -->
+        <div class="container">
+            <div class="sidebar">
+                <div>
+                    <h3>매체 정보 관리</h3>
+                    <ul class="menu01">
+                        <li>계정관리</li>
+                        <li>담당자 관리</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>스크립트</h3>
+                    <ul class="menu02">
+                        <li>매체 선택</li>
+                        <li>스크립트 생성</li>
+                        <li>SEO 등록</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>UTM</h3>
+                    <ul class="menu03">
+                        <li class="active">UTM 코드관리</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>서비스</h3>
+                    <ul class="menu04">
+                        <li>서비스 소개</li>
+                        <li>매체 가입 가이드</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-wrap utm-content-wrap">
+                    <div class="content-summary">
+                        <h3>UTM 코드</h3>
+                    </div>
+                    <div class="search-wrap">
+                        <form>
+                            <fieldset>
+                                <div class="field utm-field">
+                                    <div class="utm-search-select-area">
+                                        <label>소스</label>
+                                        <div class="insert select-wrap ">
+                                            <select>
+                                                <option>분류1</option>
+                                                <option>분류1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="utm-search-select-area">
+                                        <label>매체</label>
+                                        <div class="insert select-wrap">
+                                            <select>
+                                                <option>분류1</option>
+                                                <option>분류1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label>검색</label>
+                                    <div class="insert search-bar-area">
+                                        <input type="text" name="search_key" class="search" placeholder="검색어를 입력해주세요.">
+                                        <button class="btn type01 round search">검색</button>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="table-summary">
+                        <div><span class="total">총 <b>3</b>건</span></div>
+                        <div class="button-area">
+                            <button class="btn type01 round download-btn">다운로드</button>
+                            <button class="btn type02 round page-edit-btn">랜딩페이지 수정</button>
+                            <a href="../utm/page2.html" class="btn type02 round code-add-btn">UTM코드 등록</a>
+                        </div>
+                    </div>
+                    <div class="table-wrap type03">
+                        <table class="data-table">
+                            <caption>매체 리스트</caption>
+                            <colgroup>
+                                <col style="width: 5%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                                <col style="width: 5%">
+                            </colgroup>
+                            <thead class="thead">
+                                <tr>
+                                    <th class="center">
+                                        <div class="flex align-center justify-center">
+                                            <input type="checkbox" id="allCheck" name="" value="전체동의" />
+                                            <label for="allCheck">
+                                                <span class="checkbox"></span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th>캠페인</th>
+                                    <th>소스</th>
+                                    <th>매체</th>
+                                    <th>관리메모</th>
+                                    <th>콘텐츠</th>
+                                    <th>키워드</th>
+                                    <th>등록일자</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- UTM 데이터  -->
+                                <tr>
+                                    <td class="center">
+                                        <div class="flex align-center justify-center">
+                                            <input type="checkbox" id="chcek01" name="utmCode" value="" />
+                                            <label for="chcek01">
+                                                <span class="checkbox"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        캠페인1
+                                    </td>
+                                    <td>
+                                        storyfunding
+                                    </td>
+                                    <td>Facebook</td>
+                                    <td>구글마케팅</td>
+                                    <td>구글마케팅</td>
+                                    <td>구글마케팅</td>
+                                    <td>2023.12.12</td>
+                                    <td><button class="ico delete"></button></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="center"></td>
+                                    <td>
+                                        <span class="campaign-title">랜딩 URL</span>
+                                        <span class="campaign-title">랜딩 + UTM</span>
+                                        <span class="campaign-title">단축 URL</span>
+                                    </td>
+                                    <td colspan="7">
+                                        <span
+                                            class="campaign-code-text">https://www.instagram.com/502coffeeroasters/</span>
+                                        <span
+                                            class="campaign-code-text">https://www.instagram.com/502coffeeroasters/</span>
+                                        <span
+                                            class="campaign-code-text">https://www.instagram.com/502coffeeroasters/</span>
+                                    </td>
+                                </tr>
+                                <!--// UTM 데이터  -->
+
+                                <!-- UTM 데이터  -->
+                                <tr>
+                                    <td class="center">
+                                        <div class="flex align-center justify-center">
+                                            <input type="checkbox" id="chcek02" name="utmCode" value="" />
+                                            <label for="chcek02">
+                                                <span class="checkbox"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        캠페인1
+                                    </td>
+                                    <td>
+                                        storyfunding
+                                    </td>
+                                    <td>Facebook</td>
+                                    <td>구글마케팅</td>
+                                    <td>구글마케팅</td>
+                                    <td>구글마케팅</td>
+                                    <td>2023.12.12</td>
+                                    <td><button class="ico delete"></button></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="center"></td>
+                                    <td>
+                                        <span class="campaign-title">랜딩 URL</span>
+                                        <span class="campaign-title">랜딩 + UTM</span>
+                                        <span class="campaign-title">단축 URL</span>
+                                    </td>
+                                    <td colspan="7">
+                                        <span
+                                            class="campaign-code-text">https://www.instagram.com/502coffeeroasters/</span>
+                                        <span
+                                            class="campaign-code-text">https://www.instagram.com/502coffeeroasters/</span>
+                                        <span
+                                            class="campaign-code-text">https://www.instagram.com/502coffeeroasters/</span>
+                                    </td>
+                                </tr>
+                                <!--// UTM 데이터  -->
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="paging-area">
+                        <button class="paging-start"><i class="ico">처음</i></button>
+                        <button class="paging-prev"><i class="ico">이전</i></button>
+                        <ul class="paging type01">
+                            <li>1</li>
+                            <li class="active">2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                        <button class="paging-next"><i class="ico">다음</i></button>
+                        <button class="paging-end"><i class="ico">마지막</i></button>
+
+                    </div>
+
+                </div>
+                <footer>
+                    <a class="brand-logo gray" href="/">DARI</a>
+                    <ul>
+                        <li>이용 안내</li>
+                        <li>서비스 약관</li>
+                        <li>개인정보처리방침</li>
+                    </ul>
+                    <span>ⓒDARI</span>
+                </footer>
+            </div>
+        </div>
+        <!-- // 기본정보 -->
+
+        <!-- 가이드 팝업 -->
+        <div class="layer-popup guide-layer-popup reg">
+            <div class="layer-wrap guide-layer-wrap">
+                <div class="bg"></div>
+                <div class="popup-wrap">
+                    <button type="button" class="pop-close">닫기</button>
+                    <div class="popup-content">
+                        <h2>DARI 시작하기<span>쉽고 간편하게 마케팅하는 담당자라면 누구나 사용해보세요. 정기적으로 업데이트 되는 다리 솔루션을 만나보실 수 있습니다</span></h2>
+                        <div class="guide-popup-area">
+                            <!-- sidebar -->
+                            <div class="guide-sidebar">
+                                <div>
+                                    <h3>솔루션 정의</h3>
+                                    <ul class="menu01">
+                                        <li id="forWho" class="active">for WHO</li>
+                                        <li id="forWhat">for WHAT & WHY</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>사용 가이드</h3>
+                                    <ul class="menu02">
+                                        <li id="container">컨테이너 생성</li>
+                                        <li id="seo">SEO 동륵</li>
+                                        <li id="scriptInstall">스크립트 생성</li>
+                                        <li id="scriptAdd">스크립트 삽입</li>
+                                        <li id="utm">UTM 코드 관리</li>
+                                        <li id="manager">담당자 관리</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //sidebar -->
+
+                            <!-- content -->
+                            <div class="guide-content">
+                                <div class="guide-contaner active" data-content="forWho">
+                                    <p class="border">브랜드 마케팅팀, 대행사가 마케팅 활동을 하는 모든 이들을 위해 고민했습니다.<br>
+                                        광고 캠페인의 실행을 보다 간편하고 효율적으로 만들며 광고 관리의 복잡성을 줄이는 데 중점을 둔 솔루션으로,<br>
+                                        이들이 자원을 전략적으로 배분하고 캠페인 운영의 유연성을 높일 수 있도록 돕습니다.</p>
+                                    <ul class="guide type01">
+                                        <li>
+                                            <div class="num">1</div>
+                                            <div class="guide-text-area">
+                                                <h3 class="title">브랜드의 마케팅 부서</h3>
+                                                <div class="text">자체적으로 다양한 광고 캠페인을 운영하고 관리해야 하는 브랜드의 마케팅 부서에게 DARI는 광고
+                                                    스크립트
+                                                    관리를 간편하게<br>
+                                                    해주는 중요한 도구입니다. DARI를 통해 마케팅 팀은 복잡한 <b>코딩 작업 없이도 여러 광고 매체의 스크립트를 쉽게
+                                                        관리하고<br>
+                                                        조정할
+                                                        수 있습니다.</b>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="num">2</div>
+                                            <div class="guide-text-area">
+                                                <h3 class="title">마케팅 대행사</h3>
+                                                <div class="text">여러 클라이언트의 광고 캠페인을 효율적으로 관리하고 조정해야 하는 마케팅 대행사에게 DARI는
+                                                    작업 효율성을 크게 향상시키는 솔루션입니다. <b>마케팅 대행사는 DARI를 사용하여 클라이언트 별로 다른 광고 스크립트를
+                                                        쉽게 ON/OFF 하고,</b> 광고 캠페인의<br>
+                                                    실행을 보다 <b>신속하고 유연하게 관리할 수 있습니다.</b>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="num">3</div>
+                                            <div class="guide-text-area">
+                                                <h3 class="title">다중 광고 채널을 사용하는 사업체</h3>
+                                                <div class="text">여러 광고 채널을 통해 캠페인을 진행하는 사업체들에게 DARI는 <b>광고 스크립트 관리의
+                                                        복잡성을 줄이고,</b> 캠페인의 실행을<br>
+                                                    더욱 원활하게 만드는 효과적인 도구입니다. 사업체는 DARI를 통해 <b>다양한 광고 플랫폼의 스크립트를 중앙에서
+                                                        간단히<br>
+                                                        관리할 수 있습니다.</b>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="guide-contaner" data-content="forWhat">
+                                    <p class="border">마케팅을 하는 모든 관계자들의 광고 캠페인의 복잡성을 줄이고, 시간과 리소스를 보다 효과적으로 활용하며, <br>
+                                        전략적 목표 달성에 더 집중할 수 있는 강력한 도구로 성장해가려고 합니다.
+                                    <ul class="guide type01">
+                                        <li>
+                                            <div class="num">1</div>
+                                            <div class="guide-text-area">
+                                                <h3 class="title">원클릭 스크립트 관리</h3>
+                                                <div class="text">DARI는 사용자가 단 한 번의 클릭으로 다양한 광고 매체의 스크립트를 쉽게 ON/OFF 할 수
+                                                    있게 해줍니다.<br>
+                                                    이는 매체별로 별도의 스크립트 코드를 관리할 필요가 없게 해주어 광고 스크립트 관리를 간소화하고 시간을 절약합니다.
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="num">2</div>
+                                            <div class="guide-text-area">
+                                                <h3 class="title">사이트 성능 최적화에 도움</h3>
+                                                <div class="text">여러 광고 스크립트를 사이트에 삽입하면 로딩 속도가 느려질 수 있죠. 아마 공감하시는 분들
+                                                    계실겁니다.<br>
+                                                    DARI는 필요한 스크립트만 선택적으로 로드하여 사이트 성능을 최적화에 도움을 줄 수 있습니다.<br>
+                                                    이는 사용자 경험을 개선하고 전환율을 높일 수 있는 방법 중 하나입니다
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="num">3</div>
+                                            <div class="guide-text-area">
+                                                <h3 class="title">고급 기능 접근성</h3>
+                                                <div class="text">DARI는 GA4의 향상된 전자상거래 기능 같은 고급 기능들을 원클릭으로 쉽게 사용할 수 있게
+                                                    도와줍니다.<br>
+                                                    이는 마케팅 팀이 복잡한 설정 과정 없이도 고급 데이터 분석과 전략적 의사결정을 할 수 있게 도와줍니다
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="num">4</div>
+                                            <div class="guide-text-area">
+                                                <h3 class="title">리타겟팅 전략의 향상</h3>
+                                                <div class="text">DDARI는 리타겟팅 이벤트값을 지속적으로 확장하여 제공함으로써, 마케팅 팀이 더 세분화되고
+                                                    맞춤화된 리타겟팅 전략을 <br>
+                                                    수립하고 실행할 수 있게 해, 광고 캠페인의 효과를 극대화를 돕습니다
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="num">5</div>
+                                            <div class="guide-text-area">
+                                                <h3 class="title">오류 감소와 안정성 향상</h3>
+                                                <div class="text">DARI는 광고 스크립트 관리를 자동화함으로써 실수로 인한 문제나 손실을 최소화하고, 광고
+                                                    캠페인의 안정성을 <br>
+                                                    높여주고자 합니다. 이는 보다 안정적이고 신뢰할 수 있는 운영 환경에서 작업할 수 있게 도와줍니다.
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="guide-contaner" data-content="container">
+                                    <h3 class="">컨테이너를 생성 해주세요.</h3>
+                                    <p>DARI에 가입하셨다면 컨테이너를 생성 해주셔야 합니다.<br>컨테이너는 DARI에 브랜드를 설정하는 절차입니다.</p>
+                                    <p>[ 컨테이너 관리 바로가기 > 컨테이너 생성 버튼 클릭 > 브랜드명, 사이트 주소 기입 ]</p>
+
+                                    <div class="img type01">
+                                        <img src="../../@resource/images/common/container_add.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="guide-contaner" data-content="seo">
+                                    <h3 class="">SEO를 설정하고 포털에서 우리 사이트를 알려주세요.</h3>
+                                    <p>네이버와 구글에서 내 사이트를 검색시 나와야 하는 우리 사이트 설명을 등록해주세요.<br>SEO 등록을 통해 사이트 검색 시 제목과 설명을 설정할
+                                        수 있습니다.</p>
+                                    <p>[ SEO 등록 바로가기 > 제목, 내용,연관 검색 키워드 입력 > SEO 저장 버튼 클릭 ]</p>
+
+                                    <div class="img type01">
+                                        <img src="../../@resource/images/common/seo_setting.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="guide-contaner" data-content="scriptInstall">
+                                    <h3 class="">DARI 스크립트를 생성하여 플랫폼에 복사해주세요.</h3>
+                                    <p>DARI를 사용하기 위한 가장 중요한 단계입니다.<br>아래 이미지대로 스크립트를 생성 후 사용하시는 플랫폼(이커머스 솔루션사)에 삽입만
+                                        해주세요.<br>그 이후에는 DARI에서 모든 매체 스크립트의 설정이 가능해집니다.</p>
+                                    <div class="script-install-area">
+                                        [ 상단 메뉴 스크립트 설치 버튼 클릭<div class="script-install-img"></div>> 스크립트 팝업의 우측삭단 복사
+                                        <i class="ico copy"></i>]
+                                        버튼클릭
+                                    </div>
+
+                                    <div class="img type01">
+                                        <img src="../../@resource/images/common/script_install.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="guide-contaner" data-content="scriptAdd">
+                                    <h3 class="">앞에서 생성한 DARI의 스크립트는 사용하시는 각 플랫폼(이커머스 솔루션사) 가이드에 맞춰<br>
+                                        1번만 붙여넣기 하시면 됩니다.</h3>
+                                    <p>현재 사용중인 이커머스 솔루션사(예_카페24, 메이크샵, 고도몰, 아임웹 등)의 Head 영역에 Dari의 스크립트를 심어주기만 하면 끝!</p>
+
+                                    <div class="img type01">
+                                        <img src="../../@resource/images/common/script_add.png" alt="">
+                                    </div>
+
+                                    <div class="guide-detail-btn-area">
+                                        <a href="https://dari.gitbook.io/dari_qna/#undefined-3">자세히보기<i
+                                                class="ico deltail-arrow"></i></a>
+                                        <span>*현재는 카페24 지원중이며 순차적으로 타사도 서비스 반영될 예정입니다.</span>
+                                    </div>
+
+                                </div>
+                                <div class="guide-contaner" data-content="utm">
+                                    <h3 class="">DARI에서 광고 진행시 내 광고의 성과를 측정하기 위한 필수 UTM 코드 삽입<br>이제는 DARI에서 편하게 생성하고
+                                        확실하게
+                                        관리할 수 있습니다.</h3>
+                                    <p class="mt10">[ UTM 코드 관리 > UTM 코드 등록 ]</p>
+                                    <ul class="guide type01">
+                                        <li>
+                                            <div class="disc"></div>
+                                            <div class="guide-text-area">
+                                                <h3 class="title">UTM 코드등록</h3>
+                                                <div class="text"> 1개의 랜딩페이지 URL을 생성하면 반복해서 랜딩페이지 URL을 등록하고 생성하는 불필요한
+                                                    행위를 할 필요 없습니다.
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="disc"></div>
+                                            <div class="guide-text-area">
+                                                <h3 class="title">신규코드추가</h3>
+                                                <div class="text"> 등록된 랜딩페이지 URL에서는 쉽게 UTM 코드를 생성할 수 있습니다.
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="disc"></div>
+                                            <div class="guide-text-area">
+                                                <h3 class="title">단축 URL</h3>
+                                                <div class="text">DARI는 GA4의 향상된 전자상거래 기능 같은 고급 기능들을 원클릭으로 쉽게 사용할 수 있게
+                                                    랜딩페이지 URL과 UTM 코드가 삽입된 긴 URL 사용은 그만! 단축 URL로 자동생성되며 클릭만으로 복사할 수
+                                                    있습니다.
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="img type01">
+                                        <img src="../../@resource/images/common/utm_list.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="guide-contaner" data-content="manager">
+                                    <h3 class="">2월말 오픈 예정</h3>
+                                    <p class="">다양한 브랜드에 다양한 담당자들과 함께 관리하고 계시진 않나요<br>
+                                        브랜드별로 혹은 각각의 역할을 리더가 확인해야하지 않을까요<br>
+                                        담당자가 퇴사 또는 로테이션이 있지는 않으신가요<br><br>
+                                        마케팅을 하는 모두가 하는 고민, 광고관리 기능의 일부가 담당자 관리입니다.<br>
+                                        DARI에서 함께 열람해보세요
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- //content -->
+                        </div>
+
+                        <div class="today-close-btn-area">
+                            <input type="checkbox" id="todayClose" name="" value="" />
+                            <label for="todayClose">
+                                <span class="checkbox"></span>
+                                <span>오늘 하루동안 보지 않기</span>
+                            </label>
+
+                            <button class="popup-close-btn">[닫기]</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //랜딩페이지 수정 팝업 -->
+    </div>
+    <!-- // WRAP -->
+    <script>
+        const setCookie = function (cname, cvalue, exdays) {
+            const todayDate = new Date();
+            todayDate.setTime(todayDate.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + todayDate.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+
+        const getCookie = function (cname) {
+            const name = cname + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+
+        $(".guide-sidebar ul li").click(function () {
+            $(".guide-sidebar ul li").removeClass("active");
+            $(this).addClass("active");
+
+            const contentId = $(this).attr('id');
+            $("[data-content]").removeClass("active");
+            $("[data-content='" + contentId + "']").addClass("active");
+        });
+
+        $(".popup-close-btn").click(function () {
+            if ($("#todayClose").is(":checked")) {
+                setCookie("close", "Y", 1);
+            } $(".guide-layer-popup").removeClass("reg");
+        })
+
+        $(document).ready(function () {
+            const hidePopup = getCookie("close");
+            if (hidePopup === 'Y') {
+                $(".guide-layer-popup").removeClass("reg");
+            }
+        });
+
+    </script>
+</body>
+
+</html>

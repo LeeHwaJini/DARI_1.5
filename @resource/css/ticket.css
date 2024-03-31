@@ -1,0 +1,17 @@
+.ico.drop-down {
+    width: 40px;
+    height: 40px;
+    background: url('../images/common/ico_drop_down.png') 50% 50% no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#sortable tr {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#sortable .ui-sortable-helper>td {
+    background: #F4F6FA;
+}

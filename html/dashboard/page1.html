@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DARI &copy;LNIK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../../@resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../../@resource/js/jquery-ui.js"></script>
+    <script src="../../@resource/js/dari.js"></script>
+    <script src="../../@resource/js/common.js"></script>
+    <link rel="stylesheet" href="../../@resource/css/jquery-ui.css">
+    <link rel="stylesheet" href="../../@resource/css/chart.css">
+    <link rel="stylesheet" href="../../@resource/css/chart-custom.css">
+    <link rel="stylesheet" href="../../@resource/css/common.css">
+    <link rel="stylesheet" href="../../@resource/css/dashboard.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="skip-navi">
+        <a href="#content">본문 바로가기</a>
+    </div>
+    <!-- Loading -->
+    <div class="loader">
+        <div class="ico load"></div>
+        <h3>잠시만 기다려 주세요.</h3>
+    </div>
+    <!--//Loading -->
+    <!-- WRAP -->
+    <header>
+        <div class="header-wrap">
+            <a class="brand-logo" href="#">DARI</a>
+
+            <div class="brand_url_wrap">
+                <!-- 컨테이너 등록 전 -->
+                <div class="container-add-before ">
+                    <div class="txt">스크립트 설치를 위한 컨테이너를 선택해주세요.</div>
+                </div>
+
+                <!-- //컨테이너 등록 전 -->
+
+                <!-- 컨테이너 등록 후 -->
+                <div class="container-add-after none">
+                    <div class="txt">브랜드 > <span>www.dari.com</span></div><span class="btn type04 copy">스크립트 설치</span>
+                </div>
+
+                <!-- //컨테이너 등록 후 -->
+            </div>
+
+            <div class="select-wrap">
+                <a class="select drop_down">홍길동님</a>
+                <div class="drop_menu">
+                    <a class="drop_item">마이페이지</a>
+                    <a class="drop_item">로그아웃</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrap">
+        <!-- 기본정보 -->
+        <div class="container">
+            <div class="sidebar">
+
+                <div class="container-info-content">
+                    <!-- 컨테이너 등록 전 -->
+                    <div class="container-info-area container-info-before none">
+                        <p>이용권 결제 후<br>DARI를 시작하세요.</p>
+                        <button class="btn type01 container-add-btn">컨테이너 등록 하기</button>
+                        <div class="container-select-area ">
+                            <div class="custom-select type03 containerCreateSelect">
+                                <div class="custom-select-text on">등록된 컨테이너가 없습니다.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //컨테이너 등록 전 -->
+
+                    <!-- 컨테이너 등록 후 -->
+                    <div class="container-info-area container-info-after ">
+                        <img src="../../@resource/images/common/ico_container.png" alt="">
+                        <div class="container-select-area">
+                            <div class="custom-select type03 containerCreateSelect">
+                                <div class="custom-select-text on">컨테이너 변경</div>
+                                <ul class="custom-select-list">
+                                    <li class="custom-select-option" value="">카페24</li>
+                                    <li class="custom-select-option" value="">아임웹</li>
+                                </ul>
+                            </div>
+                            <div class="container-class-area">
+                                <div class="container-class-text-area">
+                                    <span>등급</span>
+                                    <b>마스터</b>
+                                </div>
+                                <button class="btn type01 invitation-link-btn">초대링크</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- //컨테이너 등록 후 -->
+                </div>
+                <div>
+                    <ul class="menu01">
+                        <li>UTM 코드관리</li>
+                        <li>매체 정보 관리</li>
+                        <li>SEO 등록</li>
+                    </ul>
+                </div>
+                <div>
+
+                    <ul class="menu02">
+                        <li>컨테이너 관리</li>
+                        <li class="active">관리 대시보드</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="menu03">
+                        <li>이용권 설정</li>
+                        <li>개인정보 설정</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="menu04">
+                        <li>FQA</li>
+                        <li>서비스 소개</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+
+                <div class="content-wrap">
+                    <div class="content-summary">
+                        <h3>관리 대시보드</h3>
+                        <div class="flex center">
+                            <button class="btn type02 round"><i class="ico filter"></i>브랜드별 보기</button>
+                        </div>
+                    </div>
+                    <div class="table-wrap type01">
+                        <ul class="data-table-list-head">
+                            <li class="center">No</li>
+                            <li>이름, 이메일</li>
+                            <li>브랜드,등급</li>
+                            <li>초대자</li>
+                            <li>관리매체 목록</li>
+                            <li>등록일</li>
+                            <li class="center">상세</li>
+                        </ul>
+                        <ul class="data-table-list-body">
+                            <!-- 단일 데이터 -->
+                            <li>
+                                <div class="field">
+                                    <div><span class="no">1</span></div>
+                                    <div>
+                                        <b>김미령</b>
+                                        <span>ciarinne@naver.com</span>
+                                    </div>
+                                    <div>
+                                        <b>라보페</b>
+                                    </div>
+                                    <div>김태희</div>
+                                    <div>
+                                        <span class="text-color-gray">등급지정 후 담당 할 수 있습니다.</span>
+                                    </div>
+                                    <div></div>
+                                    <div class="center"><a class="btn type01 detail-btn">상세</a></div>
+                                </div>
+                            </li>
+                            <!-- //단일 데이터 -->
+
+                            <!-- 리스트 여러개일 경우-->
+                            <li>
+                                <div class="field">
+                                    <div><span class="no">1</span></div>
+                                    <div>
+                                        <b>김숙자</b>
+                                        <span>ciarinne@naver.com</span>
+                                    </div>
+                                    <div class="grid-span-4">
+                                        <!-- 리스트 1 -->
+                                        <div>
+                                            <div>
+                                                <b>라보페</b>
+                                                <span>매니저</span>
+                                            </div>
+                                            <div>
+                                                김태희
+                                            </div>
+                                            <div>
+                                                <span>[Google] Google Merchant center</span>
+                                                <span>[Google] Google Merchant center</span>
+                                                <span>[Google] Google Merchant center</span>
+                                            </div>
+                                            <div>
+                                                <span>2024.02.02</span>
+                                                <span>2024.02.02</span>
+                                                <span>2024.02.02</span>
+                                            </div>
+                                        </div>
+                                        <!-- //리스트 1 -->
+                                        <!-- 리스트 2 -->
+                                        <div>
+                                            <div>
+                                                <b>라보페</b>
+                                                <span>매니저</span>
+                                            </div>
+                                            <div>
+                                                김태희
+                                            </div>
+                                            <div>
+                                                <span>[Google] Google Merchant center</span>
+                                                <span>[Google] Google Merchant center</span>
+                                                <span>[Google] Google Merchant center</span>
+                                            </div>
+                                            <div>
+                                                <span>2024.02.02</span>
+                                                <span>2024.02.02</span>
+                                                <span>2024.02.02</span>
+                                            </div>
+                                        </div>
+                                        <!-- //리스트 2 -->
+                                    </div>
+                                    <div class="center"><a class="btn type01 detail-btn">상세</a></div>
+                                </div>
+                            </li>
+                            <!-- //리스트 여러개일 경우-->
+                        </ul>
+                    </div>
+
+                    <!-- 페이지네이션 -->
+                    <div class="paging-area">
+                        <a href="" class="paging-start button"><i class="ico">처음</i></a>
+                        <a href="" class="paging-prev button"><i class="ico">이전</i></a>
+                        <ul class="paging type01">
+                            <a href="${paging.pageUrlList[i.index]}">
+                                <li class="active">1</li>
+                            </a>
+                            <a href="${paging.pageUrlList[i.index]}">
+                                <li class="">2</li>
+                            </a>
+                            <a href="${paging.pageUrlList[i.index]}">
+                                <li class="">3</li>
+                            </a>
+                            <a href="${paging.pageUrlList[i.index]}">
+                                <li class="">4</li>
+                            </a>
+                            <a href="${paging.pageUrlList[i.index]}">
+                                <li class="">5</li>
+                            </a>
+                        </ul>
+                        <a href="" class="paging-next button"><i class="ico">마지막</i></a>
+                        <a href="" class="paging-end button"><i class="ico">다음</i></a>
+                    </div>
+                    <!-- //페이지네이션 -->
+
+                </div>
+
+                <footer>
+                    <div class="footer-top-area">
+                        <a class="brand-logo gray" href="/">DARI</a>
+                        <ul>
+                            <li><a href="/member/agree-service">서비스 이용약관</a></li>
+                            <li><a href="/member/agree-info">개인정보처리방침</a></li>
+                        </ul>
+                        <span>ⓒDARI</span>
+                    </div>
+
+                    <div class="footer-bottom-area">
+                        <div>
+                            <span class="company-name">주식회사 레이지버드코퍼레이션</span>
+                            <span>대표 : 박민석</span>
+                            <span>사업자등록번호 : 531-87-03104</span>
+                            <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2208183676">사업자정보확인</a>
+                            <span>통신판매업신고 : 강남 10630호</span>
+                        </div>
+                        <div>
+                            <span>주소 : 서울특별시 강남구 강남대로126길 30, 2층</span>
+                            <span>대표전화 : 02-6956-5510</span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- // 기본정보 -->
+    </div>
+    <!-- // WRAP -->
+    <script>
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.custom-select').length) {
+                $('.custom-select-list').hide();
+                $('.custom-select-text').removeClass("on");
+            }
+        });
+        $('body').on('click', '.custom-select-text', function () {
+            var customSelectList = $(this).next('.custom-select-list');
+            customSelectList.show();
+            $(this).addClass("on");
+        });
+
+        $('body').on('click', '.custom-select-option', function () {
+            var customSelect = $(this).closest('.custom-select');
+            var value = $(this).attr('value');
+            if (customSelect.find('.custom-select-list').hasClass("type2")) {
+                customSelect.find('.select-value').val($(this).text());
+            }
+            customSelect.find('.custom-select-text').text($(this).text());
+            customSelect.find('.select-origin').val(value);
+            customSelect.find('.custom-select-list').hide();
+        });
+
+    </script>
+</body>
+
+</html>

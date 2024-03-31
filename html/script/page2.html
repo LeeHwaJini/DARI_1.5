@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DARI &copy;LNIK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<script src="../../@resource/js/jquery-1.12.4.min.js"></script>
+	<script src="../../@resource/js/jquery-ui.js"></script>
+    <script src="../../@resource/js/dari.js"></script>
+    <script src="../../@resource/js/common.js"></script>
+	<link rel="stylesheet" href="../../@resource/css/jquery-ui.css">
+    <link rel="stylesheet" href="../../@resource/css/chart.css">
+    <link rel="stylesheet" href="../../@resource/css/chart-custom.css">
+    <link rel="stylesheet" href="../../@resource/css/common.css">
+    <link rel="stylesheet" href="../../@resource/css/script.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="skip-navi">
+		<a href="#content">본문 바로가기</a>
+	</div>
+    <!-- Loading -->
+    <div class="loader">
+        <div class="ico load"></div>
+        <h3>잠시만 기다려 주세요.</h3>
+    </div>
+    <!--//Loading -->
+	<!-- WRAP -->
+    <header>
+        <div class="header-wrap">
+            <a class="brand-logo" href="#">DARI</a>
+            
+            <div class="brand_url_wrap">
+                <div class="txt">브랜드 > <span>www.dari.com</span></div><span class="btn type04 copy">스크립트 설치</span>
+            </div>
+            
+            <div class="select-wrap">
+                <a class="select drop_down">홍길동님</a>
+                <div class="drop_menu">
+                    <a class="drop_item">마이페이지</a>
+                    <a class="drop_item">로그아웃</a>
+                </div>
+            </div>
+        </div>
+    </header>
+	<div id="wrap">
+        <!-- 기본정보 -->
+        <div class="container">
+            <div class="sidebar">
+                <div>
+                    <h3>매체 정보 관리</h3>
+                    <ul class="menu01">
+                        <li>계정관리</li>
+                        <li>담당자 관리</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>스크립트</h3>
+                    <ul class="menu02">
+                        <li class="active">매체 선택</li>
+                        <li>스크립트 생성</li>
+                        <li>SEO 등록</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>UTM</h3>
+                    <ul class="menu03">
+                        <li>UTM 코드관리</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>서비스</h3>
+                    <ul class="menu04">
+                        <li>서비스 소개</li>
+                        <li>매체 가입 가이드</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-wrap">
+                    <div class="content-summary">
+                        <h3>매체 별 관리</h3>
+                    </div>
+                    <div class="search-wrap">
+                        <form>
+                        <fieldset>
+                            <div class="field">
+                                
+                                <div class="insert full radio_square">
+                                    <input type="radio" id="radioType02" name="radioType" value="SNS" checked>
+                                    <label for="radioType02">
+                                        <i class="ico media_sns"></i>
+                                        SNS
+                                    </label>
+                                    <input type="radio" id="radioType03" name="radioType" value="NAVER">
+                                    <label for="radioType03">
+                                        <i class="ico media_naver"></i>
+                                        NAVER
+                                    </label>
+                                    <input type="radio" id="radioType04" name="radioType" value="KAKAO">
+                                    <label for="radioType04">
+                                        <i class="ico media_kakao"></i>
+                                        KAKAO
+                                    </label>
+                                    <input type="radio" id="radioType05" name="radioType" value="GOOGLE">
+                                    <label for="radioType05">
+                                        <i class="ico media_google"></i>
+                                        GOOGLE
+                                    </label>
+                                    <input type="radio" id="radioType06" name="radioType" value="DA">
+                                    <label for="radioType06">
+                                        <i class="ico media_da"></i>
+                                        DA
+                                    </label>
+                                    <input type="radio" id="radioType07" name="radioType" value="ANALYTICS">
+                                    <label for="radioType07">
+                                        <i class="ico media_ga"></i>
+                                        ANALYTICS
+                                    </label>
+                                </div>
+                            </div>
+                            
+                        </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="table-summary">
+                        <div class="script-media-title-area flex align-center justify-between">
+                            <div><span class="total">총 <b>3</b>건</span></div>
+                            <div>
+                                <button class="btn type02 round">계정관리</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                      <!-- 매체 -->
+                      <div>
+                        <!-- 매체 리스트 영역 -->
+                        <div class="switch-list">
+                            <!-- 매체 리스트 아이템 -->
+                            <div class="switch-list-item">
+                                <div class="switch-list-item-header type02">
+                                   <div class="switch-list-logo-content">
+                                    <div class="switch-list-img-area">
+                                        <img src="../../@resource/images/temp/ico_temp_01.png" alt="">
+                                    </div>
+                                     
+                                   </div>
+                                    <div class="flex">
+                                        <input type="checkbox" id="toggle01" class="toggle" hidden> 
+                                        <label for="toggle01" class="toggleSwitch">
+                                            <span class="toggleButton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="switch-list-item-body type02">
+                                    <div class="switch-list-text-area">
+                                        <b>성과형 디스플레이 광고</b>
+                                        <span>Glad for Advertisement</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / 매체 리스트 아이템 -->
+
+                             <!-- 매체 리스트 아이템 -->
+                             <div class="switch-list-item">
+                                <div class="switch-list-item-header type02">
+                                   <div class="switch-list-logo-content">
+                                    <div class="switch-list-img-area">
+                                        <img src="../../@resource/images/temp/ico_temp_01.png" alt="">
+                                    </div>
+                                     
+                                   </div>
+                                    <div class="flex">
+                                        <input type="checkbox" id="toggle02" class="toggle" hidden> 
+                                        <label for="toggle02" class="toggleSwitch">
+                                            <span class="toggleButton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="switch-list-item-body type02">
+                                    <div class="switch-list-text-area">
+                                        <b>성과형 디스플레이 광고</b>
+                                        <span>Glad for Advertisement</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //매체 리스트 아이템 -->
+
+                             <!-- 매체 리스트 아이템 -->
+                             <div class="switch-list-item">
+                                <div class="switch-list-item-header type02">
+                                   <div class="switch-list-logo-content">
+                                    <div class="switch-list-img-area">
+                                        <img src="../../@resource/images/temp/ico_temp_01.png" alt="">
+                                    </div>
+                                     
+                                   </div>
+                                    <div class="flex">
+                                        <input type="checkbox" id="toggle03" class="toggle" hidden> 
+                                        <label for="toggle03" class="toggleSwitch">
+                                            <span class="toggleButton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="switch-list-item-body type02">
+                                    <div class="switch-list-text-area">
+                                        <b>성과형 디스플레이 광고</b>
+                                        <span>Glad for Advertisement</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // 매체 리스트 아이템 -->
+
+                             <!-- 매체 리스트 아이템 -->
+                             <div class="switch-list-item">
+                                <div class="switch-list-item-header type02">
+                                   <div class="switch-list-logo-content">
+                                    <div class="switch-list-img-area">
+                                        <img src="../../@resource/images/temp/ico_temp_01.png" alt="">
+                                    </div>
+                                     
+                                   </div>
+                                    <div class="flex">
+                                        <input type="checkbox" id="toggle03" class="toggle" hidden> 
+                                        <label for="toggle03" class="toggleSwitch">
+                                            <span class="toggleButton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="switch-list-item-body type02">
+                                    <div class="switch-list-text-area">
+                                        <b>성과형 디스플레이 광고</b>
+                                        <span>Glad for Advertisement</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //매체 리스트 아이템 -->
+
+                        </div>
+                        <!-- / 매체 리스트 영역 -->
+                    </div>
+                    <!-- / 매체 -->
+                </div>
+                <footer>
+                    <a class="brand-logo gray" href="/">DARI</a>
+                    <ul>
+                        <li>이용 안내</li>
+                        <li>서비스 약관</li>
+                        <li>개인정보처리방침</li>
+                    </ul>
+                    <span>ⓒDARI</span>
+                </footer>
+            </div>
+        </div>
+        <!-- // 기본정보 -->
+    </div>
+	<!-- // WRAP -->
+	<script>
+	</script>
+</body>
+
+</html>

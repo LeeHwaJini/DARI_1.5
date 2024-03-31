@@ -1,0 +1,466 @@
+@charset "UTF-8";
+
+/* MEMBER 공통 */
+#wrap {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.container {
+    /* width: 100%;
+    height: 100%; */
+    min-height: 720px;
+    background: #ffffff;
+}
+
+.content {
+    background: #fff;
+}
+
+.container .member-tab-box {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.wrap-area {
+    max-width: 540px;
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 100%;
+}
+
+.member-result {
+    margin-top: 3em;
+}
+
+.member-result h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.member-result p {
+    font-size: 16px;
+    margin-top: 1em;
+}
+
+.member-result .pointer {
+    color: #002beb;
+}
+
+/* FIND ID RESULT */
+.wrap-area .title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 1.5em;
+}
+
+.member-result {
+    padding: 44px 0 55px 0;
+    border-radius: 0.875em;
+    border: solid 1px #e8e8e8;
+    background-color: #f4f6fa;
+    text-align: center;
+}
+
+.member-result .find-id-text {
+    margin: 0 0 26px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #999;
+}
+
+.member-result .find-id-result-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.btn-area {
+    display: grid;
+    grid-template-columns: 188px auto;
+    gap: 10px;
+}
+
+.btn-area .find-id-result-btn-area a {
+    height: 60px !important;
+    line-height: 60px !important;
+    font-size: 1.25rem !important;
+    font-weight: 800;
+    border-radius: 0.75em;
+}
+
+/* .member-type-input-area .input-item+.input-item { margin-top: 10px; } */
+
+.member-header-login-btn {
+    padding: 0 30px;
+    height: 50px;
+    line-height: 48px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.container .btn.full {
+    height: 60px !important;
+    line-height: 60px !important;
+    font-size: 1.25rem !important;
+    -webkit-border-radius: 0.75em !important;
+}
+
+.container .login-btn-area .btn.full {
+    font-size: 1.125rem !important;
+}
+
+.none {
+    display: none !important;
+}
+
+
+.box {
+    margin: 2em 0em;
+}
+
+.box.type01 {
+    padding: 44px 0 55px 0;
+    border-radius: 0.875em;
+    border: solid 1px #002beb;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 6px 10px 0 rgba(119, 131, 153, 0.2);
+}
+
+.box.type02 {
+    padding: 2em 1em;
+    border-radius: 0.875em;
+    border: solid 1px #eff2f6;
+    background-color: #fafafb;
+    text-align: center;
+}
+
+.box.priceType {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em 2em;
+}
+
+.wrap-title {
+    text-align: left;
+}
+
+.wrap-title h3 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.wrap-title h3 span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.wrap-title span {
+    color: #999999;
+}
+
+.wrap-price {
+    text-align: right;
+    text-align: right;
+    font-size: 15px;
+    color: #000;
+}
+
+.wrap-price .price {
+    color: #002beb;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0px 5px;
+}
+
+.wrap-price .memo {
+    display: block;
+    color: #999;
+    font-size: 13px;
+}
+
+.box.type02.checklist {
+    padding: 2em;
+    text-align: left;
+}
+
+.checklist h3 {
+    font-size: 15px;
+    color: #002beb;
+    font-weight: 700;
+    margin: 0em 0em 1em 0em;
+}
+
+.checklist ul li {
+    padding: 0.5em 0em;
+    display: flex;
+    align-items: center;
+}
+
+.checklist ul li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url('../images/common/ico_checkboxImg.png');
+    background-size: contain;
+}
+
+
+.reg-wrap {
+    margin: 1em 0em;
+    padding: 0em 0em 2em 0em;
+}
+
+.reg-wrap+.reg-wrap {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 2em;
+}
+
+.reg-wrap fieldset {}
+
+.reg-wrap .field {
+    /* padding: 0.5em 1em; */
+}
+
+.reg-wrap .field+.field {
+    margin-top: 1.5em;
+    display: flex;
+}
+
+.reg-wrap .field>label {
+    display: inline-block;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.reg-wrap .field>.insert {
+    display: inline-block;
+    width: calc(100% - 160px);
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.reg-wrap .field>.insert.full {
+    display: inline-block;
+    width: calc(100% - 0px);
+}
+
+
+.reg-wrap .member-agree-layout {
+    padding: 30px;
+    background: #f4f6fa;
+    border-radius: 0.875em;
+    border: solid 1px #e8e8e8;
+}
+
+.reg-wrap .member-signup-area .btn {
+    min-width: 110px !important;
+    font-size: 1.125rem;
+}
+
+.reg-wrap .btn.type01.round {
+    border-radius: 0.75em !important;
+    -webkit-border-radius: 0.75em !important;
+    font-size: 1rem;
+}
+
+.reg-wrap .member-agree-layout-hr {
+    margin: 21px 0 26px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.reg-wrap .member-agree-layout .agree-text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.reg-wrap .member-agree-layout input[type="checkbox"]+label span.checkbox {
+    margin-right: 19px;
+}
+
+.reg-wrap .member-agree-layout .agree-detail-btn {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.reg-wrap .flex-layout {
+    display: flex;
+    align-items: center;
+}
+
+.reg-wrap .flex-layout.space-between {
+    justify-content: space-between;
+}
+
+.reg-wrap .align-start {
+    align-items: flex-start !important;
+}
+
+.reg-wrap .mb24 {
+    margin-bottom: 24px !important;
+}
+
+.reg-wrap .price {
+    font-size: 24px;
+    color: #002beb;
+    font-weight: 600;
+}
+
+.reg-wrap .priceMemo {
+    color: #002beb;
+    margin-left: 0.5em;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.popup-payment-title-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2.75em;
+}
+
+.popup-payment-title-area h3 {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    padding: 0 !important;
+}
+
+.popup-payment-title-area .pop-close {
+    position: unset;
+}
+
+.popup-payment-body-area {
+    font-size: 12px;
+}
+
+.popup-payment-btn-area {
+    border-radius: 10px !important;
+}
+
+.login-btn {
+    height: 60px !important;
+    line-height: 60px !important;
+    background-color: #141414 !important;
+    color: #bfff00 !important;
+    border-radius: 0.75em !important;
+    font-size: 1.125rem !important;
+    font-weight: bold;
+}
+
+.login-layer-popup .popup-content .field {
+    margin-bottom: 1em;
+}
+
+.login-layer-popup .btn-wrap {
+    margin-top: 2.25em;
+    margin-bottom: 1.5em !important;
+}
+
+.login-layer-popup .find-btn {
+    text-align: right;
+    color: #606060;
+}
+
+.login-layer-popup .find-btn a {
+    display: inline-block;
+    line-height: 17px;
+    color: #606060;
+    font-weight: 500;
+}
+
+.payment-result {
+    text-align: center;
+}
+
+.payment-result a {
+    max-width: 200px;
+}
+
+.ico.checkCard {
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/common/ico_check_card.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    background-size: contain;
+}
+
+
+/* CHECKBOX */
+.reg-wrap input[type="checkbox"],
+.card-price-area input[type="checkbox"] {
+    display: none;
+}
+
+.reg-wrap input[type="checkbox"]+label span.checkbox,
+.card-price-area input[type="checkbox"]+label span.checkbox {
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    vertical-align: middle;
+    background: url('../images/common/ico_checkbox.png') 50% 50% no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.reg-wrap input[type="checkbox"]:checked+label span.checkbox,
+.card-price-area input[type="checkbox"]:checked+label span.checkbox {
+    background: url('../images/common/ico_checkbox_active.png') 50% 50% no-repeat;
+    background-size: contain;
+}
+
+.btn-top-border {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 3em;
+    margin-top: 3em;
+}
+
+.btn-top-border.btn-area>a {
+    font-weight: 800;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.payment-result-area {
+    max-width: 540px;
+    margin: 3em auto 0;
+
+}
+
+.payment-result-area .payment-result a {
+    min-width: 220px;
+}
+
+.payment-result-area .member-result {
+    margin-top: 0;
+    padding: 71px 0 64px 0;
+}
+
+.payment-result-area .member-result h2 {
+    margin-top: 1.5em;
+}
+
+.payment-result-area .member-result p {
+    margin-top: 1.25em;
+}
